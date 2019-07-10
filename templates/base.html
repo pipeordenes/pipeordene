@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    {% block extrastatic %}
+    {% endblock %}
+    <title>{% block title %} Medi-Fast {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    {% block header %}
+    <header>
+        {% if user.is_authenticated %}
+            <h3> Medi-Fast <span>&copy;</span></h3>
+            <h3 id="usr_h3"> | <i class="fa fa-user-circle"></i> {{ user.username|title }} </h3>
+            <a id="logout_a_head" href="{% url 'logout' %}"> <i class="fa fa-sign-out"></i> <b> Cerrar Sesión</b>  </a>
+        {% else %}
+            <h3> Medi-Fast <span>&copy;</span></h3>
+            <a id="a_head_login" href="{% url 'login' %}"> <i class="fa fa-sign-out"></i> <b>Iniciar Sesión</b> </a>
+        {% endif %}
+        
+    </header>
+    <nav>
+        <div class="toggle">
+            <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            {% if user.is_authenticated %}
+                <a id="logout_a_tog" href="{% url 'logout' %}">  <i class="fa fa-sign-out"></i>  </a>    
+                <h3 id="usr_h3_tog"> <i class="fa fa-user-circle"></i> {{ user.username|title }} |</h3>
+                
+            {% else %}
+                <a id="a_tog_login" href="{% url 'login' %}"> <i class="fa fa-sign-in"></i> <b> Iniciar Sesión</b></a>
+            {% endif %}
+        </div> 
+        <ul>
+            
+            <li><a href="{% url 'index' %}"> Inicio</a></li>
+            <li><a href="{% url 'video' %}"> Videos</a></li>
+            <li><a href="{% url 'punto' %}"> Mapa </a></li>
+            <li><a href="{% url 'voluntario' %}">Solicitar servicio</a></li>
+           
+
+            <h3 class="logo-desp"> medifast <span>&copy;</span></h3>
+        </ul>
+    </nav>          
+    {% endblock %}
+
+    {% block content %}
+    <h2>contenido base</h2>
+    {% endblock %}
+
+    {% block footer %}
+    <footer>
+        <h4> <span>Todos los derechos reservados Medi-Fast &copy;</span></h4>
+    </footer>
+    {% endblock %}
+    <!-- flex slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="{% static 'js/jquery.flexslider.js' %}"></script>   
+    <!-- end -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/carrusel.js' %}"></script>
+</body>
+</html>

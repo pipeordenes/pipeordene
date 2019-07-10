@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrastatic %}
+<!-- FlexSlider -->
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css">
+{% endblock %}
+{% block title %}
+Medi-Fast
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="{% static 'img/carrusel/imagen1.jpg' %}" alt="medicamento1">
+                <section class="flex-caption"></section>
+            </li>
+            <li>
+                <img src="{% static 'img/carrusel/imagen2.jpg' %}" alt="medicamento2">
+                <section class="flex-caption"></section>
+            </li>
+            <li>
+                <img src="{% static 'img/carrusel/imagen3.jpg' %}" alt="medicamento3">
+                <section class="flex-caption"></section>
+            </li>
+        </ul>
+    </div>
+    <div class="text">
+        <div class="div_quienes">
+            <h2>¿Quiénes somos?</h2>
+            </br>
+            <p> Medi-Fast está orientado para ser usado por personas que se atienden en consultorios o centros de salud públicos de la comuna que tengan gestión y distribución de fármacos. 
+                Las personas pueden ser de tercera edad, cuya movilidad se ve notoriamente reducida por el paso del tiempo, personas con dificultades de traslado, 
+                ya sea por alguna discapacidad o patología en particular, o simplemente por personas con 
+            </p>
+        </div>
+        <div class="div_mision">
+            <h2>Objetivos</h2>
+            <br>
+            <p> Los objetivos de la Medi-Fast son Generar acceso fácil a tratamientos farmacológicos, 
+			Favorecer la adherencia a tratamientos farmacológicos y Automatizar el abastecimiento de medicamentos cuando estén en stock crítico.
+
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}

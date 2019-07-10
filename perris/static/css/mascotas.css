@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 225px;
+    height: 190px;;
+}
+
+.div_conten{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.h2_gal1{
+    margin-top: 130px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(123, 199, 99);;
+}
+
+.h2{
+    color: rgb(255, 255, 255);
+    background-color: rgrgb(123, 199, 99);;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_galeria_cont{
+    margin:15px 0 15px 15px;
+    border:1px solid  rgb(228, 228, 228);
+
+}

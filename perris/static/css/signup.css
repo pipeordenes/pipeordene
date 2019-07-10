@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.div_registro{
+    margin-top: 130px;
+    max-width: 500px;
+    font-size: 16px;
+    border:1px solid  rgb(228, 228, 228);
+    border-top: 40px solid rgb(123, 199, 99);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.123);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.div_registro form p span{   
+    display: none;    
+}
+
+.div_registro form ul{   
+    display: none;    
+}
+
+.h2_sign{
+    margin-top:-38px; 
+    color: white;
+}
+
+button{
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 35px;
+    padding: 0 15px 0 15px;
+    color: white;
+    background-color: rgb(123, 199, 99);
+    border: none;
+}

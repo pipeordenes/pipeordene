@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: =?utf-8?q?Contrase=C3=B1a_restablecida_en_127=2E0=2E0=2E1=3A8000?=
+From: webmaster@localhost
+To: admin@admin.com
+Date: Mon, 29 Oct 2018 22:44:00 -0000
+Message-ID: <154085304090.4800.7392163446466932728@SKXLL-PC>
+
+
+Ha recibido este correo electrónico porque ha solicitado restablecer la contraseña para su cuenta en 127.0.0.1:8000.
+
+Por favor, vaya a la página siguiente y escoja una nueva contraseña.
+
+http://127.0.0.1:8000/accounts/reset/Mg/50u-1a61dbaa47133d3c8dfa/
+
+Su nombre de usuario, en caso de haberlo olvidado: admin
+
+¡Gracias por usar nuestro sitio!
+
+El equipo de 127.0.0.1:8000
+
+
+
+-------------------------------------------------------------------------------

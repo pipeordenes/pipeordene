@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+.h1_reset_1{
+    font-size: 22px;
+    color: white;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+
+.btn_correo1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 35px;
+    padding: 0 15px 0 15px;
+    color: white;
+    background-color: rgb(123, 199, 99);;
+    border: none; 
+    margin-bottom: 15px;  
+}
+
+.btn_correo1:hover{
+    background-color: rgb(97, 160, 78);;
+}
+
+.div_pass_reset
+{
+    margin-top: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    border:1px solid  rgb(228, 228, 228);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.123);
+    margin-bottom: 30px; 
+    text-align: center;
+    position: relative;
+    border-top: 40px solid rgb(123, 199, 99);
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(123, 199, 99);
+    height: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .div_pass_reset{
+        margin-top: 57px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .div_pass_reset{
+        max-width: 400px;
+        box-shadow: none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;
+        padding: 0 5px 0 5px;
+        margin-bottom: 0;
+    }
+}

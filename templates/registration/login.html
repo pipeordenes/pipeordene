@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrastatic %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %}
+Iniciar Sesión
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="div_login">
+        <h2>Iniciar Sesión</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" id="btn_login"> Iniciar Sesión</button>
+            {% if user.is_authenticated %}
+                
+            {% else %}
+                <p><a class="a_rest" href="{% url 'signup' %}">Registrarse</a></p>
+                <p><a class="a_rest" href="{% url 'password_reset' %}">Reestablecer contraseña</a></p> 
+            {% endif %}
+        </form>
+    </div>
+</main>
+    
+{% endblock %}

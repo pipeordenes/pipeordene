@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrastatic %}
+<link rel="stylesheet" href="{% static 'css/formulario.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %}
+Registro Voluntarios
+{% endblock %}
+
+{% block content %}
+
+    <main>
+        <div class="div_form">
+            <h1>Únete </h1>
+            <form method="POST" class="form"> {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="save btn btn-default" id="btn_form"> <b>Enviar</b> </button>
+            </form>
+        </div>
+        
+    </main>
+    
+{% endblock %}

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    font-size: 16px;
+    background: rgb(123, 199, 99);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header h3{
+    font-family: 'Pacifico', cursive;
+    margin: 0 0 0 5px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+header span{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ini if block */
+
+#usr_h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-top: 3px; 
+}
+#a_head_login {
+    text-decoration:none;
+    color: white;
+    float: right;
+    border:none;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+}
+
+#a_head_login:hover{
+    background-color: rgb(100, 165, 80);
+}
+
+#logout_a_head{
+    float: right;
+    text-decoration: none;
+    color: white;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 6px 10px 4px 10px;
+}
+
+#logout_a_head:hover{
+    background-color: rgb(100, 165, 80);
+}
+/*-------------------TOGGLE-----------------------------*/
+
+#usr_h3_tog{
+    float: right;
+    color: black;
+    font-size: 20px;
+}
+
+#a_tog_login {
+    text-decoration:none;
+    color: black;
+    float: right;
+    border:none;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-right: -20px;
+    font-size: 16px;
+}
+
+#a_tog_login:hover{
+    background-color: white;
+}
+
+#logout_a_tog {
+    text-decoration: none;
+    color: black;
+    float: right;
+    height: 40px;
+    font-size: 25px;
+    margin-top: -3px;
+}
+/* end if block*/
+
+
+nav{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    border-bottom:1px rgb(219, 219, 219) solid;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.068);
+    position: fixed;
+    top: 32px;
+    z-index: 100;
+}
+nav ul{
+    list-style-type: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+nav ul li:hover{
+    background: rgba(0, 0, 0, 0.13);  
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+.logo-desp{
+    display: none;
+}
+main{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    position: initial;
+    text-align: center;
+}
+
+.text{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.text h2{
+    text-align: center;
+    font-size: 26px;
+}
+
+.div_quienes{
+    padding: 0 40px 0px 40px;
+    font-size:16px;
+    text-align: justify;
+    margin-top: 60px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.div_mision{
+    padding: 0 40px 50px 40px;
+    font-size:16px;
+    text-align: justify;
+    margin-top: 60px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    border-top:1px rgba(0, 0, 0, 0.137) solid;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer img{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+
+
+@media screen and (max-width: 768px){
+
+    header{
+        display: none;
+    }
+
+    .div_quienes{
+        padding: 40px 20px 0 20px ;
+        width: 100%;
+        max-width:550px;
+        margin: 5px auto 20px auto;
+    }
+    .div_mision{
+        padding: 0 20px 0 20px;
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto 20px auto;
+    }
+    nav{
+        background: rgb(123, 199, 99);
+        position: fixed;
+        top: 0;
+    }
+    .toggle{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px rgba(0, 82, 136, 0.315) solid;
+        box-sizing: border-box;
+    }
+    nav ul li a {
+        color: white;
+    }
+    .active{
+        display: block;
+    }
+    .menu{
+        border: none;
+        background: none;
+        width: auto;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .logo-desp{
+        display: block;
+        font-family: 'Pacifico', cursive;
+        color: white;
+        margin: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+    
+    
+}
